@@ -1,0 +1,26 @@
+:root {
+  /* Colors */
+  --color-bg: #0a0a0a;
+  --color-bg-section: #111111;
+  --color-text: #ffffff;
+  --color-text-muted: #888888;
+  --color-accent: #d4af37;
+  /* Metallic Gold */
+  --color-accent-light: #f1d06e;
+  --color-border: #333333;
+
+  /* Typography */
+  --font-heading: 'Cinzel', serif;
+  --font-body: 'Noto Sans JP', sans-serif;
+
+  /* Spacing */
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 32px;
+  --spacing-lg: 64px;
+  --spacing-xl: 120px;
+
+  /* Layout */
+  --container-width: 1200px;
+  --header-height: 100px;
+}
