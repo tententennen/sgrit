@@ -57,3 +57,24 @@ style.innerHTML = `
   }
 `;
 document.head.appendChild(style);
+
+// Splash Screen Logic
+window.addEventListener('load', () => {
+  window.scrollTo(0, 0); // Force scroll to top
+  const splash = document.querySelector('.splash-screen');
+  const heroLogo = document.querySelector('.hero-logo-container');
+  const heroSlider = document.querySelector('.hero-slider');
+
+  // Wait for logo animation (2.5s)
+  setTimeout(() => {
+    splash.classList.add('hidden');
+    document.body.classList.remove('no-scroll');
+
+    // Trigger Hero Animations after splash fade starts
+    setTimeout(() => {
+      if (heroLogo) heroLogo.classList.add('animate-in');
+      if (heroSlider) heroSlider.classList.add('active');
+    }, 500); // Wait half a second into the fade for smoother overlap
+
+  }, 2500);
+});

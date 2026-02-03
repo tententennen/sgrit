@@ -14,7 +14,13 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
+<body class="no-scroll">
+  <div class="splash-screen">
+    <div class="splash-logo">
+      <img src="/logo.png" alt="SGRIT" class="splash-logo-img">
+    </div>
+  </div>
+
   <header class="header">
     <div class="container header-container">
       <a href="#" class="logo">
@@ -23,6 +29,7 @@
       <nav class="nav">
         <ul class="nav-list">
           <li><a href="#news" class="nav-link">NEWS</a></li>
+          <li><a href="#movie" class="nav-link">MOVIE</a></li>
           <li><a href="#talents" class="nav-link">ARTIST</a></li>
           <li><a href="#about" class="nav-link">ABOUT</a></li>
           <li><a href="#contact" class="nav-link btn-nav">CONTACT</a></li>
@@ -33,18 +40,16 @@
 
   <main>
     <section class="hero">
-      <div class="hero-content">
-        <h1 class="hero-title">
-          <span class="hero-title-en">CASTING &<br class="br-desktop">MANAGEMENT</span>
-          <span class="hero-title-jp">キャスティングから、<br class="br-desktop">その先の成果まで。</span>
-        </h1>
-        <p class="hero-subtitle">タレント × SNS × ライブ配信を一気通貫で支援</p>
-        <div class="hero-cta">
-          <a href="#contact" class="btn">CONTACT US</a>
-        </div>
+      <div class="hero-slider">
+        <div class="hero-slide" style="background-image: url('/talents/talent1.jpg');"></div>
+        <div class="hero-slide" style="background-image: url('/talents/talent2.jpg');"></div>
+        <div class="hero-slide" style="background-image: url('/talents/talent3.jpg');"></div>
+      </div>
+      <div class="hero-logo-container">
+        <img src="/hero-logo.png" alt="SGRIT" class="hero-main-logo">
       </div>
       <canvas id="hero-canvas"></canvas>
-      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
     </section>
 
 
@@ -80,6 +85,21 @@
         </div>
         <div class="news-more text-center">
           <a href="#" class="btn-more">VIEW MORE</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="movie" class="section movie">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">MOVIE</h2>
+          <p class="section-subtitle">映像</p>
+        </div>
+        <div class="movie-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/7ZEoqsm21as?si=xxxxxx"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </div>
     </section>
