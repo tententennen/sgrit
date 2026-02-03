@@ -74,6 +74,20 @@ img {
     align-items: center;
 }
 
+.br-desktop {
+    display: block;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .br-desktop {
+        display: none;
+    }
+}
+
 /* Button */
 .btn {
     display: inline-block;
@@ -584,6 +598,16 @@ img {
 .btn-large {
     padding: 20px 60px;
     font-size: 1.2rem;
+    white-space: nowrap;
+    width: 100%;
+    max-width: 400px;
+}
+
+@media (max-width: 768px) {
+    .btn-large {
+        padding: 16px 30px;
+        font-size: 1rem;
+    }
 }
 
 /* Footer */
