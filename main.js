@@ -74,6 +74,12 @@ window.addEventListener('load', () => {
     setTimeout(() => {
       if (heroLogo) heroLogo.classList.add('animate-in');
       if (heroSlider) heroSlider.classList.add('active');
+
+      // Animate Logo Out after it stays for a while (e.g., 2.5s)
+      setTimeout(() => {
+        if (heroLogo) heroLogo.classList.add('animate-out');
+      }, 2500);
+
     }, 500); // Wait half a second into the fade for smoother overlap
 
   }, 2500);
